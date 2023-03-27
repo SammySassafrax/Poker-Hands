@@ -1,0 +1,115 @@
+<html>
+   <head>
+   <style>
+   body {
+     background: url("fish.gif");
+     background-repeat: repeat;
+     background-size: 100% 100%;
+     background-position: center;
+   }
+   h1 {
+     text-align: center;
+     font-size: 3em;
+   }
+   h1 span {
+     background-color: Orange;
+   }
+   </style>
+   <title>Analyzer</title>
+</head>
+<body>
+<h1><span>Epic Poker Hand Analyzer</span></h1>
+
+<form method="post" action="../cgi-bin/cweiss1_PRG550A.223.A2.py">
+ 
+<p style="color: White">Pick your card hand (5 Cards)
+<br/>
+<br/>
+<input type="checkbox" name="cards" value="2d" onclick="return Validate();" /><img src= "cards/2d.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="3d" onclick="return Validate();" /><img src= "cards/3d.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="4d" onclick="return Validate();" /><img src= "cards/4d.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="5d" onclick="return Validate();" /><img src= "cards/5d.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="6d" onclick="return Validate();" /><img src= "cards/6d.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="7d" onclick="return Validate();" /><img src= "cards/7d.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="8d" onclick="return Validate();" /><img src= "cards/8d.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="9d" onclick="return Validate();" /><img src= "cards/9d.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="td" onclick="return Validate();" /><img src= "cards/td.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="jd" onclick="return Validate();" /><img src= "cards/jd.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="qd" onclick="return Validate();" /><img src= "cards/qd.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="kd" onclick="return Validate();" /><img src= "cards/kd.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="ad" onclick="return Validate();" /><img src= "cards/ad.png" width="68" height="88"/>
+<br/>
+<input type="checkbox" name="cards" value="2c" onclick="return Validate();" /><img src= "cards/2c.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="3c" onclick="return Validate();" /><img src= "cards/3c.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="4c" onclick="return Validate();" /><img src= "cards/4c.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="5c" onclick="return Validate();" /><img src= "cards/5c.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="6c" onclick="return Validate();" /><img src= "cards/6c.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="7c" onclick="return Validate();" /><img src= "cards/7c.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="8c" onclick="return Validate();" /><img src= "cards/8c.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="9c" onclick="return Validate();" /><img src= "cards/9c.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="tc" onclick="return Validate();" /><img src= "cards/tc.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="jc" onclick="return Validate();" /><img src= "cards/jc.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="qc" onclick="return Validate();" /><img src= "cards/qc.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="kc" onclick="return Validate();" /><img src= "cards/kc.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="ac" onclick="return Validate();" /><img src= "cards/ac.png" width="68" height="88"/>
+<br/>
+<input type="checkbox" name="cards" value="2h" onclick="return Validate();" /><img src= "cards/2h.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="3h" onclick="return Validate();" /><img src= "cards/3h.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="4h" onclick="return Validate();" /><img src= "cards/4h.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="5h" onclick="return Validate();" /><img src= "cards/5h.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="6h" onclick="return Validate();" /><img src= "cards/6h.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="7h" onclick="return Validate();" /><img src= "cards/7h.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="8h" onclick="return Validate();" /><img src= "cards/8h.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="9h" onclick="return Validate();" /><img src= "cards/9h.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="th" onclick="return Validate();" /><img src= "cards/th.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="jh" onclick="return Validate();" /><img src= "cards/jh.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="qh" onclick="return Validate();" /><img src= "cards/qh.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="kh" onclick="return Validate();" /><img src= "cards/kh.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="ah" onclick="return Validate();" /><img src= "cards/ah.png" width="68" height="88"/>
+<br/>
+<input type="checkbox" name="cards" value="2s" onclick="return Validate();" /><img src= "cards/2s.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="3s" onclick="return Validate();" /><img src= "cards/3s.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="4s" onclick="return Validate();" /><img src= "cards/4s.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="5s" onclick="return Validate();" /><img src= "cards/5s.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="6s" onclick="return Validate();" /><img src= "cards/6s.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="7s" onclick="return Validate();" /><img src= "cards/7s.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="8s" onclick="return Validate();" /><img src= "cards/8s.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="9s" onclick="return Validate();" /><img src= "cards/9s.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="ts" onclick="return Validate();" /><img src= "cards/ts.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="js" onclick="return Validate();" /><img src= "cards/js.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="qs" onclick="return Validate();" /><img src= "cards/qs.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="ks" onclick="return Validate();" /><img src= "cards/ks.png" width="68" height="88"/>
+<input type="checkbox" name="cards" value="as" onclick="return Validate();" /><img src= "cards/as.png" width="68" height="88"/>
+</p>
+
+<input type="submit" id="submit" value="Analyze" />
+<input type="reset" value="Clear" /></p>
+
+</form>
+
+<script type="text/javascript">
+
+
+function Validate()  
+{  
+    var checkboxes = document.getElementsByName("cards");  
+    var numberOfCheckedItems = 0;  
+    for(var i = 0; i < checkboxes.length; i++)  
+    {  
+        if(checkboxes[i].checked)
+            numberOfCheckedItems++;
+    }
+    if(numberOfCheckedItems > 5)  
+    {  
+        alert("You can ONLY have 5 cards");  
+        return false;  
+    }  
+}
+</script>
+
+<p>
+   <a href="http://validator.w3.org/">
+	<img src="http://www.w3.org/Icons/valid-xhtml10"
+	     alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>
+</p>
+</body></html>
